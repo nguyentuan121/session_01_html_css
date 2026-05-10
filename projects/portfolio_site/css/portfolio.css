@@ -1,0 +1,198 @@
+/* PORTFOLIO SECTION */
+.portfolio-section {
+  padding: 100px 20px;
+
+  background: white;
+}
+
+/* TITLE */
+.portfolio-section h2 {
+  text-align: center;
+
+  font-size: 3rem;
+
+  color: var(--color-dark);
+
+  margin-bottom: 40px;
+}
+
+/* FILTER BUTTONS */
+.portfolio-filters {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 12px 25px;
+
+  border: 2px solid var(--color-primary);
+
+  background: transparent;
+
+  color: var(--color-primary);
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--color-primary);
+
+  color: white;
+}
+
+/* GRID */
+.portfolio-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* ITEM */
+.portfolio-item {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+/* IMAGE */
+.portfolio-item img {
+  width: 100%;
+
+  aspect-ratio: 4/3;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+
+  display: block;
+}
+
+/* ZOOM */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* OVERLAY */
+.portfolio-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(30, 41, 59, 0.95),
+    rgba(30, 41, 59, 0.5),
+    transparent
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  padding: 25px;
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+/* SHOW OVERLAY */
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* TEXT */
+.portfolio-overlay h3 {
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.portfolio-overlay p {
+  color: #cbd5e1;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.95);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s;
+
+  z-index: 2000;
+}
+
+/* SHOW LIGHTBOX */
+.lightbox:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* IMAGE */
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+
+  border-radius: 10px;
+}
+
+/* CLOSE */
+.lightbox-close {
+  position: absolute;
+
+  top: 20px;
+  right: 30px;
+
+  font-size: 3rem;
+
+  color: white;
+
+  text-decoration: none;
+}
+
+/* TABLET */
+@media (max-width: 1023px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section h2 {
+    font-size: 2.2rem;
+  }
+}
