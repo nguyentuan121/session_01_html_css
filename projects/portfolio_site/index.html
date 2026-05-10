@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">Nguyễn Anh Tuấn</div>
+
+      <!-- Checkbox Hack -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Hamburger -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Nguyễn Anh Tuấn</span></h1>
+
+        <p>Full-Stack Developer | UI Designer | Problem Solver</p>
+
+        <a href="#portfolio" class="cta-button"> View My Work </a>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- IMAGE -->
+          <div class="about-image">
+            <img
+              src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/8/26/1233821/Giai-Nhi-1--Nang-Tre.jpg?w=800&crop=auto&scale=both"
+              alt="Profile Photo"
+            />
+          </div>
+
+          <!-- CONTENT -->
+          <div class="about-content">
+            <h2>About Me</h2>
+
+            <p class="lead">
+              I'm a passionate developer with 3+ years of experience building
+              web applications that make a difference.
+            </p>
+
+            <p>
+              Specialized in Frontend development with React and Vue. Also
+              experienced in Backend with Node.js and Python. I believe in clean
+              code, user-centered design, and continuous learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+          <!-- HTML -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>HTML5</span>
+              <span>95%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-progress html"></div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>CSS3</span>
+              <span>90%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-progress css"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span>85%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-progress js"></div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>React</span>
+              <span>80%</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-progress react"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <h2>My Portfolio</h2>
+
+        <!-- FILTER BUTTONS -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Web</button>
+          <button class="filter-btn">Mobile</button>
+          <button class="filter-btn">Design</button>
+        </div>
+
+        <!-- GRID -->
+        <div class="portfolio-grid">
+          <!-- ITEM 1 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-1" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1011/400/300"
+                alt="Project 1"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>E-Commerce Website</h3>
+                <p>React + Node.js</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-2" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1005/400/300"
+                alt="Project 2"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>Mobile Banking App</h3>
+                <p>Flutter</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-3" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1025/400/300"
+                alt="Project 3"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>Creative Design</h3>
+                <p>Figma + Photoshop</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-4" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1035/400/300"
+                alt="Project 4"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>Portfolio Website</h3>
+                <p>HTML + CSS</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-5" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1043/400/300"
+                alt="Project 5"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>Dashboard UI</h3>
+                <p>Vue.js</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="portfolio-item">
+            <a href="#lightbox-6" class="lightbox-link">
+              <img
+                src="https://picsum.photos/id/1050/400/300"
+                alt="Project 6"
+              />
+
+              <div class="portfolio-overlay">
+                <h3>Travel App</h3>
+                <p>React Native</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOXES -->
+
+    <div id="lightbox-1" class="lightbox">
+      <img src="https://picsum.photos/id/1011/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+
+    <div id="lightbox-2" class="lightbox">
+      <img src="https://picsum.photos/id/1005/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+
+    <div id="lightbox-3" class="lightbox">
+      <img src="https://picsum.photos/id/1025/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+
+    <div id="lightbox-4" class="lightbox">
+      <img src="https://picsum.photos/id/1035/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+
+    <div id="lightbox-5" class="lightbox">
+      <img src="https://picsum.photos/id/1043/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+
+    <div id="lightbox-6" class="lightbox">
+      <img src="https://picsum.photos/id/1050/1000/700" alt="" />
+      <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-wrapper">
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <p>
+              Feel free to reach out. I'm always open to discussing new
+              projects.
+            </p>
+
+            <div class="info-item">
+              <span class="icon">📧</span>
+              <span>your.email@example.com</span>
+            </div>
+
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <span>Hanoi, Vietnam</span>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name"> Full Name </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- LOGO -->
+          <div class="footer-logo">Nguyễn Anh Tuấn</div>
+
+          <!-- TAGLINE -->
+          <p class="footer-tagline">Building digital experiences</p>
+
+          <!-- SOCIAL -->
+          <div class="social-links">
+            <!-- GITHUB -->
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12
+                        c0 5.302 3.438 9.8 8.207 11.387
+                        .599.111.793-.261.793-.577v-2.234
+                        c-3.338.726-4.033-1.416-4.033-1.416
+                        -.546-1.387-1.333-1.756-1.333-1.756
+                        -1.089-.745.083-.729.083-.729
+                        1.205.084 1.839 1.237 1.839 1.237
+                        1.07 1.834 2.807 1.304 3.492.997
+                        .107-.775.418-1.305.762-1.604
+                        -2.665-.305-5.467-1.334-5.467-5.931
+                        0-1.311.469-2.381 1.236-3.221
+                        -.124-.303-.535-1.524.117-3.176
+                        0 0 1.008-.322 3.301 1.23
+                        .957-.266 1.983-.399 3.003-.404
+                        1.02.005 2.047.138 3.006.404
+                        2.291-1.552 3.297-1.23 3.297-1.23
+                        .653 1.653.242 2.874.118 3.176
+                        .77.84 1.235 1.911 1.235 3.221
+                        0 4.609-2.807 5.624-5.479 5.921
+                        .43.372.823 1.102.823 2.222v3.293
+                        c0 .319.192.694.801.576
+                        C20.565 21.797 24 17.3 24 12
+                        24 5.373 18.627 0 12 0z"
+                />
+              </svg>
+            </a>
+
+            <!-- LINKEDIN -->
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M22.23 0H1.77C.79 0 0 .77 0
+                        1.72v20.56C0 23.23.79 24 1.77 24h20.46
+                        c.98 0 1.77-.77 1.77-1.72V1.72
+                        C24 .77 23.21 0 22.23 0zM7.12
+                        20.45H3.56V9h3.56v11.45zM5.34
+                        7.43a2.06 2.06 0 110-4.12
+                        2.06 2.06 0 010 4.12zm15.11
+                        13.02h-3.56v-5.57c0-1.33-.03-3.04
+                        -1.85-3.04-1.85 0-2.14 1.44-2.14
+                        2.94v5.67H9.34V9h3.42v1.56h.05
+                        c.48-.9 1.63-1.85 3.35-1.85
+                        3.58 0 4.24 2.36 4.24 5.43v6.31z"
+                />
+              </svg>
+            </a>
+
+            <!-- EMAIL -->
+            <a href="#" class="social-link">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2
+                        2v12c0 1.1.9 2 2 2h16c1.1
+                        0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0
+                        4-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+          <p>&copy; 2026 Nguyễn Anh Tuấn. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
